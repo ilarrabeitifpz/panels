@@ -1,0 +1,9 @@
+nav{
+    position:sticky;
+    top:0;
+    height:50px;
+
+
+    color: #fff;
+    background-color:#444;
+}

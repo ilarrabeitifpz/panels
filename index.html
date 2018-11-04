@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panels</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--
+    <script>
+    // Funtzio hau da lehen aldiz agertzen denean lehen pestaña aukeratuta agertu dadin
+    window.onload = function() {
+        if(!window.location.hash) {
+            window.location = window.location + '#niregustokoak';
+            window.location.reload();
+        }
+    }
+    </script>-->
+
+</head>
+<body>
+    <header>
+        <h1>Boxes</h1>
+    </header>
+    <nav></nav>
+
+
+    <main id="lanekoak">
+        <a class="tab" href="#lanekoak">Lanerekoak</a>
+        <div class="tabcontainer">
+        <!-- Zutabea -->
+        <div>
+
+            <!-- Panela -->
+
+            <div class="panel favourites" style="--color:orange"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-star"></i><b>Favourites</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody">
+                    <a class="app" href="http://google.com">
+                        <div class="icon" style="background-image:url(images/icons/google.png)"></div>
+                        <div class="title">Google</div>
+                    </a>
+                    <a class="app" href="http://google.com">
+                        <div class="icon" style="background-color: #c7d59d; background-image: url(images/icons/moodle.png)"></div>
+                        <div class="title">Moodle<br>FPzornotza</div>
+                    </a>
+                    <a class="app" href="http://google.com">
+                        <div class="icon" style="background-image:url(images/icons/google-calendar-edit.png)"></div>
+                        <div class="title">Google<br>Calendar</div>
+                    </a>
+                    <a class="app" href="http://google.com">
+                        <div class="icon" style="background-image:url(images/icons/google-drive.png)"></div>
+                        <div class="title">Google<br>Drive</div>
+                    </a>
+                    <a class="app" href="http://google.com">
+                        <div class="icon" style="background-image:url(images/icons/dropbox.png)"></div>
+                        <div class="title">Dropbox</div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Panela -->
+
+            <div class="panel tareas" style="--color:green" draggable="true">
+                 <div class="panelheader">
+                    <span><i class="fas fa-clipboard-check"></i><b>Tareas</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+               <div class="panelbody">
+                   <label for="t01" class="item"><input id="t01" type="checkbox"><span>Tarea 1</span></label>
+                   <label for="t02" class="item"><input id="t02" type="checkbox"><span>Tarea 2</span></label>
+                   <label for="t03" class="item"><input id="t03" type="checkbox"><span>Tarea 3</span></label>
+                   <label for="t04" class="item"><input id="t04" type="checkbox"><span>Tarea 4</span></label>
+                   <label for="t05" class="item"><input id="t05" type="checkbox"><span>Tarea 5</span></label>
+               </div>
+            </div>
+
+
+
+            <!-- Panela -->
+
+            <div class="panel" style="--color:gold"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-sticky-note"></i><b>Notas</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody" contenteditable="true" ></div>
+            </div>
+
+        </div>
+
+        <!-- Zutabea -->
+
+        <div>
+
+            <!-- Panela -->
+
+            <div class="panel" style="--color:purple"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-rss"></i><b> RSS Noticias</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody"></div>
+            </div>
+        </div>
+
+        <!-- Zutabea -->
+
+        <div>
+
+            <!-- Panela -->
+
+            <div class="panel"  style="--color:red"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-image"></i><b>Fotos</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody"></div>
+            </div>
+
+
+            <!-- Panela -->
+
+            <div class="panel"  style="--color:skyblue"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fab fa-google-drive"></i><b>Documentos (en Google Drive)</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody"></div>
+            </div>
+        </div>
+        </div><!--tabcontainer-->
+    </main>
+
+    <main id="niregustokoak">
+        <a class="tab" href="#niregustokoak">Nire Gustokoak</a>
+        <div class="tabcontainer">
+        <!-- Zutabea -->
+        <div>
+
+ 
+            <!-- Panela -->
+
+            <div class="panel tareas" style="--color:green" draggable="true">
+                 <div class="panelheader">
+                    <span><i class="fas fa-clipboard-check"></i><b>Egitekoak</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+               <div class="panelbody">
+                   <label for="t01" class="item"><input id="t01" type="checkbox"><span>1. Egitekoa</span></label>
+                   <label for="t02" class="item"><input id="t02" type="checkbox"><span>2. Egitekoa</span></label>
+                   <label for="t03" class="item"><input id="t03" type="checkbox"><span>3. Egitekoa</span></label>
+                   <label for="t04" class="item"><input id="t04" type="checkbox"><span>4. Egitekoa</span></label>
+                   <label for="t05" class="item"><input id="t05" type="checkbox"><span>5. Egitekoa</span></label>
+               </div>
+            </div>
+
+
+
+            <!-- Panela -->
+
+            <div class="panel" style="--color:gold"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-sticky-note"></i><b>Notas</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody" contenteditable="true" ></div>
+            </div>
+
+        </div>
+
+        <!-- Zutabea -->
+
+        <div>
+
+            <!-- Panela -->
+
+            <div class="panel" style="--color:purple"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-rss"></i><b> RSS Noticias</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody"></div>
+            </div>
+
+           <!-- Panela -->
+
+           <div class="panel favourites" style="--color:orange"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-star"></i><b>Favourites</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody">
+                     <a class="app" href="http://google.com">
+                        <div class="icon" style="background-image:url(images/icons/dropbox.png)"></div>
+                        <div class="title">Dropbox</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Zutabea -->
+
+        <div>
+
+            <!-- Panela -->
+
+            <div class="panel"  style="--color:red"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fas fa-image"></i><b>Fotos</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody"></div>
+            </div>
+
+
+            <!-- Panela -->
+
+            <div class="panel"  style="--color:skyblue"  draggable="true">
+                <div class="panelheader">
+                    <span><i class="fab fa-google-drive"></i><b>Documentos (en Google Drive)</b></span>
+                    <span><i class="fas fa-window-close"></i></span>
+                </div>
+                <div class="panelbody"></div>
+            </div>
+        </div>
+        </div><!--tabcontainer-->
+    </main>
+</body>
+</html>
